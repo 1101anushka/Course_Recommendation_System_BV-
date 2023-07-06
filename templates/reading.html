@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="reading.css">
+        <!--<script src="code1.js"></script>-->
+        <meta charset="utf-8">
+        <title>Reading Elective</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <style>
+            *{
+                margin:0%;
+                padding:0%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="back">
+            <div class="header">
+                <div class ="banner">    
+                <div class="name">
+                    <h1>SYNISTA</h1>
+                </div>
+            <div class="line">|</div>
+            <div class="years">SELECT WHAT <br><span>BEST</span> FITS YOU</div>
+            </div>
+            </div>
+        </div> 
+      <div class="tb">
+        <h2>READING ELECTIVE</h2>
+        <textarea cols="30" name="d" style= "margin-top: 10%; height:40%; width: 100%;"></textarea>
+      </div>
+     <div class="container">
+      <div class="post" name="post">
+        <div class="text">Thanks for rating us!</div>
+        <div class="edit">EDIT</div>
+      </div>
+      <div class="star-widget" name="star-widget">
+        <input type="radio" name="rate" id="rate-5" value="5" >
+        <label for="rate-5" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-4" value="4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3" value="3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2" value="2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1" value="1">
+        <label for="rate-1" class="fas fa-star"></label>
+        <form action="#">
+          <header></header>
+          <div class="box">
+            <textarea cols="30" name="desc" style= "margin-top: 10%; height:40%; width: 100%;" placeholder="Describe your experience.."></textarea>
+          </div>
+          <div class="btn" name="button">
+            <button type="submit" onclick="myfunc(event)" style= "margin-top: 10%; height:10%; width: 30%;" >Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+        btn.onclick = ()=>{
+          widget.style.display = "none";
+          post.style.display = "block";
+          editBtn.onclick = ()=>{
+            widget.style.display = "block";
+            post.style.display = "none";
+          }
+          return false;
+        }
+      </script>
+    </body>
+</html>
+
+        

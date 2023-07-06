@@ -1,0 +1,57 @@
+.back{
+    background: linear-gradient(70deg, beige, pink);
+    overflow: hidden;
+
+}
+.header{
+    display:flex;
+    justify-content:flex-start;
+    height:30%;
+    width:100%;
+}
+.header>.banner{
+    height:25%;
+    width:80%;
+    display:flex;
+    justify-content:flex-start;
+    margin:0.5%;
+    padding:1%;
+}
+.header>.banner>.years{
+    font-size:35px;
+    color:black;
+    height:90%;
+    width:40%;
+    top:80px;
+    padding:50px;
+}
+.years>span{
+    color:red;
+    font-size:60px;
+}
+
+.header>.banner>.name{
+    font-weight: bolder;
+    top:0px;
+    left:30%;
+    padding:30px;
+    text-align:left;
+    font-size:70px;
+}
+ .header>.banner> .line{
+    color:black;
+    margin:10px;
+    padding:10px;
+    top:15%;
+    position:relative;
+    font-size:100px;
+    height:90%;
+    opacity:0.3;
+}
+.heading{
+    top:5px;
+    /*margin-top:5%;*/
+    text-align:center;
+    color:black;
+    font-size:50px;
+}

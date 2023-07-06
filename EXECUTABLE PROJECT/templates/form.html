@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <title>RECOMMENDATION FORM</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/form.css') }}">
+        <style>
+          *{
+              margin:0%;
+              padding:0%;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="back">
+        <div class="header">
+            <div class ="banner">
+                
+                <div class="name">
+                    <h1>SYNISTA</h1>
+                </div>
+                <div class="line">|</div>
+                <div class="years">SELECT WHAT <br><span>BEST</span> FITS YOU</div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="dropdown">
+              <button class="dropbtn"><a href="{{url_for('code1')}}" target=_self>HOME</a></button>
+              
+          </div> 
+          <div class="dropdown">
+              <button class="dropbtn"> <a href="{{url_for('form')}}" target=_blank>RECOMMENDATION</a></button>
+             
+          </div> 
+          <div class="dropdown">
+              <button class="dropbtn"><a href="{{url_for('faq')}}" target=_blank>FAQ</a></button>
+              
+          </div> 
+          <div class="dropdown">
+              <button class="dropbtn"><a href="{{url_for('about')}}" target=_blank>ABOUT US</a></button>
+              
+          
+          </div> 
+   
+      </div>
+      
+        <div class="back1">
+          <div class="title">
+          Please fill the form
+        </div>
+        <div class="container">
+            <form id="form" name="abc" class="formrec" action="{{url_for('predict')}}" method="post">
+                  
+                  <!-- <p id="output"></p> -->
+                  <p>Are you interested in Higher Studies:</p>
+                  <input type="radio" id="hs" name="hs" value="1" required="required">
+                  <label for="yes">YES</label><br>
+                  <input type="radio" id="hs" name="hs" value="0" >
+                  <label for="no">NO</label><br>
+
+                  <p>Are you interested in Research:</p>
+                  <input type="radio" id="rs" name="rs" value="1"required="required">
+                  <label for="yes">YES</label><br>
+                  <input type="radio" id="rs" name="rs" value="0">
+                  <label for="no">NO</label><br>
+                  <!-- <p id="ors"></p> -->
+                  <br>
+
+                  <p>Are you interested in GATE:</p>
+                  <input type="radio" id="gt" name="gt" value="1" required="required">
+                  <label for="yes">YES</label><br>
+                  <input type="radio" id="gt" name="gt" value="0" >
+                  <label for="no">NO</label><br>
+  
+                  <p>Are you interested in GRE:</p>
+                  <input type="radio" id="ge" name="ge" value="1" required="required">
+                  <label for="yes">YES</label><br>
+                  <input type="radio" id="ge" name="ge" value="0" >
+                  <label for="no">NO</label><br>
+
+                  <br>
+                  <p>Are you interested in Data Science:</p>
+                  <input type="radio" id="ds" name="ds" value="1" required="required">
+                  <label for="yes">YES</label><br>
+                  <input type="radio" id="ds" name="ds" value="0" >
+                  <label for="no">NO</label><br>
+
+                  <p>Are you interested in Artificial Intelligence:</p>
+                  <input type="radio" id="ai" name="ai" value="1" required="required">
+                  <label for="yes">YES</label><br>
+                  <input type="radio" id="ai" name="ai" value="0" >
+                  <label for="no">NO</label><br>
+                  <!-- <p id="oai"></p> -->
+                  <br>
+                  <p>Are you interested in Machine Learning:</p>
+                  <input type="radio" id="ml" name="ml" value="1" required="required">
+                  <label for="yes">YES</label><br>
+                  <input type="radio" id="ml" name="ml" value="0" >
+                  <label for="no">NO</label><br>
+                  <!-- <p id="oml"></p> -->
+                  <br>
+                  <p>Are you interested in Blockchain:</p>
+                  <input type="radio" id="bc" name="bc" value="1" required="required">
+                  <label for="yes">YES</label><br>
+                  <input type="radio" id="bc" name="bc" value="0" >
+                  <label for="no">NO</label><br>
+                  
+                  <!-- <p id="ods"></p> -->
+                  <br>
+                  <p>Are you interested in Cryptography:</p>
+                  <input type="radio" id="cr" name="cr" value="1" required="required">
+                  <label for="yes">YES</label><br>
+                  <input type="radio" id="cr" name="cr" value="0" >
+                  <label for="no">NO</label><br>
+                  <!-- <p id="ocr"></p> -->
+                  <!-- <p id="obc"></p> -->
+                  <br>
+                  <p>Are you interested in Internet Of Things:</p>
+                  <input type="radio" id="iot" name="iot" value="1" required="required">
+                  <label for="yes">YES</label><br>
+                  <input type="radio" id="iot" name="iot" value="0" >
+                  <label for="no">NO</label><br>
+                  <!-- <p id="oiot"></p> -->
+                  <br>
+                  <p>Are you interested in Image Analysis:</p>
+                  <input type="radio" id="ia" name="ia" value="1" required="required">
+                  <label for="yes">YES</label><br>
+                  <input type="radio" id="ia" name="ia" value="0">
+                  <label for="no">NO</label><br>
+
+                  <p>Are you interested in Interdisdiplinary knowledge:</p>
+                  <input type="radio" id="ik" name="ik" value="1" required="required">
+                  <label for="yes">YES</label><br>
+                  <input type="radio" id="ik" name="ik" value="0">
+                  <label for="no">NO</label><br>
+                  
+                  <br>
+                  <p>Are you interested only in Recent Technologies:</p>
+                  <input type="radio" id="rt" name="rt" value="1" required="required">
+                  <label for="yes">YES</label><br>
+                  <input type="radio" id="rt" name="rt" value="0">
+                  <label for="no">NO</label><br>
+                
+                  <br>
+                  <p>Are you doing this course only to get job:</p>
+                  <input type="radio" id="jb" name="jb" value="1" required="required">
+                  <label for="yes">YES</label><br>
+                  <input type="radio" id="jb" name="jb" value="0" >
+                  <label for="no">NO</label><br>
+
+                  <br>
+                  <p>Are you interested only in marks:</p>
+                  <input type="radio" id="mk" name="mk" value="1" required="required">
+                  <label for="yes">YES</label><br>
+                  <input type="radio" id="mk" name="mk" value="0">
+                  <label for="no">NO</label><br>
+
+                  <br>
+                  <button type ="submit" style="font-size:20px; font-weight: bold; width:40%; background-color:rgb(0, 123, 255);color:white" onclick="window.location.href='{{ url_for('predict') }}';">RECOMMENDED ELECTIVE</button>
+                  
+            </form>
+            <br>
+		
+
+          </div>
+        </div>
+    </body>
+</html>
+
+
+

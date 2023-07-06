@@ -1,0 +1,77 @@
+<html>
+    <!-- {{ url_for('static',filename='css/code1.css') }} -->
+<head>
+    <title>Semester_project</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/code1.css') }}">
+
+    <style>
+        *{
+            margin:0%;
+            padding:0%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <div class="header">
+            <div class ="banner">    
+            <div class="name">
+                <h1>SYNISTA</h1>
+            </div>
+        <div class="line">|</div>
+        <div class="years">SELECT WHAT <br><span>BEST</span> FITS YOU </div>
+        </div>
+        </div>
+    </div> 
+    <div id="container-background">
+        <div id="container"></div>
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn"><a href="{{url_for('code1')}}" target=_self>HOME</a></button>
+            
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn"> <a href="{{url_for('form')}}" target=_blank>RECOMMENDATION</a></button>
+           
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn"><a href="{{url_for('faq')}}" target=_blank>FAQ</a></button>
+            
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn"><a href="{{url_for('about')}}" target=_blank>ABOUT US</a></button>
+            
+        
+        </div> 
+ 
+    </div>
+    <div class="body">
+        <div class="text1" style="padding-top: 1%; background-image:linear-gradient( rgb(1, 7, 7, 0.72), rgb(1, 7, 7, 0.72) ), url('static/images/7.jpg');">
+            <span>COURSE RECOMMENDATION<br>SYSTEM<br><br></span><br><br>
+        </div>
+    </div>
+    <div class="cont">
+        <p> It has always been a tough choice for students to choose the courses in different
+            semesters where in there is the possibility to score good grades apart from the interest
+            in the course for a future career. <br> Banasthali Vidyapith offers a variety of disciplinary
+            and open elective courses with mandatory courses in the final semester. <br> Hence,
+            choosing the courses based on the verbal recommendation from the seniors, instructors, and fellow mates becomes a hectic task.
+            To ease this course recommendation process for the upcoming semester, we have developed a system
+            that deploys simple yet powerful recommendation techniques. It is a system that takes your input and 
+            then, it outputs the top 2 courses that you can choose based on your interest.</p>
+    </div>
+    <div class="line1"><br>_______________________________________________________________________________________________________________________________________________________________________________________</div>
+</div>
+</body>
+
+</html>
+<!-- It has always been a tough choice for students to choose the courses in different
+semesters where in there is the possibility to score good grades apart from the interest
+in the course for a future career. <br> Banasthali Vidyapith offers a variety of disciplinary
+and open elective courses with mandatory courses in the final semester.  <br> Hence,
+choosing the courses based on the verbal recommendation from the seniors,
+instructors, and fellow mates becomes a hectic task.  <br> To ease this course
+recommendation process for the upcoming semester, we have developed a system
+that deploys simple yet powerful recommendation techniques. It is a system that takes your input and 
+then, it outputs the top 2 courses that you can choose based on your interest. -->

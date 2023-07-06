@@ -1,0 +1,4 @@
+﻿Required Softwares:
+
+Ananconda: Jupyter Notebook, Spyder
+Visual Studio Code

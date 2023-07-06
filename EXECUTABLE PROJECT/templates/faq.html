@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>FAQ</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/faq.css') }}">
+        <style>
+            *{
+                margin:0%;
+                padding:0%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="back">
+            <div class="header">
+                <div class ="banner">    
+                <div class="name">
+                    <h1>SYNISTA</h1>
+                </div>
+            <div class="line">|</div>
+            <div class="years">SELECT WHAT <br><span>BEST</span> FITS YOU</div>
+            </div>
+            </div>
+        </div> 
+        <div id="container-background">
+            <div id="container"></div>
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn"><a href="{{url_for('code1')}}" target=_self>HOME</a></button>
+                
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn"> <a href="{{url_for('form')}}" target=_blank>RECOMMENDATION</a></button>
+               
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn"><a href="{{url_for('faq')}}" target=_blank>FAQ</a></button>
+                
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn"><a href="{{url_for('about')}}" target=_blank>ABOUT US</a></button>
+                
+            
+            </div> 
+     
+        </div>
+       
+        <form action="action_page.php" style="margin-top: 2%;">
+           <!-- <div class="heading">
+                     FAQs
+           </div> -->
+            <div class="Ques">
+                Do I have to register and login to get the recommendation?
+            </div>
+            <div class="Ans">
+                There is no need for that. You just have to open the form and enter the required information to get the recommendation.
+            </div>          
+            <div class="Ques">
+                How many recommendations will be provided?
+            </div>
+            <div class="Ans">
+                2
+            </div>
+               
+            <div class="Ques">
+                Are the recommendations reliable?
+            </div>
+            <div class="Ans">
+                Yes, they are much reliable as individual's interest is taken into consideration each time the recommendation is provided.
+            </div>
+               
+            <div class="Ques">
+                Will my previous recommendations also be considered whenever I take the new one?
+            </div>
+            <div class="Ans">
+                No, you will only get the recommendation on the basis of your current input i.e. the information that you will just fill in the form.
+            </div>
+              
+            <div class="Ques">
+                Who should I contact in case of additional queries?
+            </div>
+            <div class="Ans">
+                You can easily contact our team by reaching us at our email ids provided in the "About Us" section.
+            </div>
+               
+            <div class="Ques">
+                Is it compulsory to provide the feedback?
+            </div>       
+            <div class="Ans">
+                It is necessary to provide us feedback since we value how each of your experience was.<br><br>
+            </div>
+ <div class="line1">_______________________________________________________________________________________________________________________________________________________________________________________</div>
+       </form>
+    </div>
+   </body>
+</html>
